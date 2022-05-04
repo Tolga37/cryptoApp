@@ -10,7 +10,7 @@ import { color } from "react-native-reanimated";
 import { useDispatch, useSelector } from "react-redux";
 import I18n from '../i18n';
 import auth from '@react-native-firebase/auth';
-
+import SignUpScreen from "./SignUpScreen"
 import CustomView from "../components/CustomView";
 import firestore from '@react-native-firebase/firestore';
 import {login} from "../redux/actions/loginActions";
@@ -252,6 +252,7 @@ export default function LoginScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+      
     },
     innerContainer: {
         flex: 1,

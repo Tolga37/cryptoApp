@@ -3,6 +3,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ProfileScreen from "./screens/ProfileScreen"
 import FavoritesScreen from "./screens/FavoritesScreen"
 import LoginScreen from "./screens/LoginScreen"
+import SignUpScreen from "./screens/SignUpScreen"
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -52,6 +53,7 @@ const Router = ({ }) => {
         return (
             <Stack.Navigator initialRouteName="LoginScreen">
                 <Stack.Screen component={LoginScreen} name="Login" options={{headerShown:false}} />
+                <Stack.Screen component={SignUpScreen} name="SignUpScreen" options={{headerShown:false}} />
             </Stack.Navigator>
         );
     }
