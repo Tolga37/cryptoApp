@@ -5,7 +5,7 @@ import firestore from '@react-native-firebase/firestore';
 import { useDispatch, useSelector } from "react-redux";
 
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
     FontAwesome.loadFont();
     return (
         <SafeAreaView style={styles.container}>

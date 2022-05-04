@@ -159,7 +159,7 @@ export default function LoginScreen({ navigation }) {
             const user = (await firestore().collection('users').doc(number).get()).data();
              dispatch(login({isLogin:true,name:user.name,uid:user.uid,number:user.number}))
             Alert.alert("HOŞGELDİNİZ",user.name)
-            navigation.navigate('HomeScreen', {screen:"HomeScreen"})
+            navigation.navigate('Piyasa', {screen:"HomeScreen"})
  
 
         } else {
