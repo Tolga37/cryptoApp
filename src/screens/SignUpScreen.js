@@ -123,6 +123,7 @@ const [password,setPassword]= useState("");
     const passwordText = I18n.t("password")
 
     async function signInWithPhoneNumber() {
+        console.log("NUMBER",number)
         if (!name) {
             Alert.alert('Lütfen adınızı giriniz')
         } else if (number.length !== 10) {

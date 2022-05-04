@@ -11,6 +11,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1833401A282290A700AF39D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18334019282290A700AF39D8 /* GoogleService-Info.plist */; };
+		1833401B282290A700AF39D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18334019282290A700AF39D8 /* GoogleService-Info.plist */; };
 		5DC66993EA7923272B2055B4 /* libPods-cryptoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D498049592242E5A3DBBE46C /* libPods-cryptoApp.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		99CB8B21397C25DF50A4F016 /* libPods-cryptoApp-cryptoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF659384755C8926C6074F2E /* libPods-cryptoApp-cryptoAppTests.a */; };
@@ -36,6 +38,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = cryptoApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = cryptoApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = cryptoApp/main.m; sourceTree = "<group>"; };
+		18334019282290A700AF39D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A9550A3E6BDE004A7F5F521 /* Pods-cryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoApp.debug.xcconfig"; path = "Target Support Files/Pods-cryptoApp/Pods-cryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6EEE6C9926D499B492AB202D /* Pods-cryptoApp-cryptoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoApp-cryptoAppTests.release.xcconfig"; path = "Target Support Files/Pods-cryptoApp-cryptoAppTests/Pods-cryptoApp-cryptoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = cryptoApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				18334019282290A700AF39D8 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* cryptoApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* cryptoAppTests */,
@@ -145,7 +149,6 @@
 				998C0FF82303F4964E6D2E8B /* Pods-cryptoApp-cryptoAppTests.debug.xcconfig */,
 				6EEE6C9926D499B492AB202D /* Pods-cryptoApp-cryptoAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1833401B282290A700AF39D8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +250,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1833401A282290A700AF39D8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
