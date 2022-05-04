@@ -4,9 +4,6 @@ import Router from './src/Router';
 import store from "./src/redux/store";
 
 const App = () => {
-
-
-  
   return (
     <Provider store={store}>
       <Router />
