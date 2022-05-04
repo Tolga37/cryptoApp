@@ -260,11 +260,12 @@ const styles = StyleSheet.create({
     logo: {
         width: 250,
         height: 250,
-        tintColor: 'white'
+     //  tintColor: 'white'
     },
     logoContainer: {
         marginBottom: 25,
-        alignItems: "center"
+        alignItems: "center",
+      
     },
     rememberMeContainer: {
         marginVertical: 15,
