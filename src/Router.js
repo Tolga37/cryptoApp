@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import HomeScreen from "./screens/HomeScreen";
 import ProfileScreen from "./screens/ProfileScreen"
 import FavoritesScreen from "./screens/FavoritesScreen"
+import LoginScreen from "./screens/LoginScreen"
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -40,10 +41,17 @@ const Router = ({ }) => {
             </Stack.Navigator>
         );
     }
-    function ProfileStack() {
+    // function ProfileStack() {
+    //     return (
+    //         <Stack.Navigator initialRouteName="ProfileScreen">
+    //             <Stack.Screen component={ProfileScreen} name="Profile"  />
+    //         </Stack.Navigator>
+    //     );
+    // }
+    function LoginStack() {
         return (
-            <Stack.Navigator initialRouteName="ProfileScreen">
-                <Stack.Screen component={ProfileScreen} name="Profile"  />
+            <Stack.Navigator initialRouteName="LoginScreen">
+                <Stack.Screen component={LoginScreen} name="Login" options={{headerShown:false}} />
             </Stack.Navigator>
         );
     }
@@ -70,7 +78,14 @@ const Router = ({ }) => {
                     ),
                 }}
             />
-                 <Tab.Screen name="Profil" component={ProfileStack}
+                 {/* <Tab.Screen name="Profil" component={ProfileStack}
+                options={{
+                    tabBarIcon: ({ color }) => (
+                        <FontAwesome name="user" color={color} size={20} />
+                    ),
+                }}
+            /> */}
+                   <Tab.Screen name="Giriş" component={LoginStack}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <FontAwesome name="user" color={color} size={20} />
