@@ -143,7 +143,6 @@ const [password,setPassword]= useState("");
     }
     async function confirmCode() {
         const result = await confirm.confirm(code);
-
         if (result) {
             console.log("RESULT", JSON.stringify(result, null, 4))
             // üyelik işlemleri
@@ -156,10 +155,11 @@ const [password,setPassword]= useState("");
                     number,
                    // type:,
                     uid: result.user.uid,
+                    favorites:{}
                 })
-                .then(() => {
+                .then(async () => {
                     setUser(result)
-
+                    await AsyncStorage.setItem('number', number)
                     // eklendi, içeriye al.
                     // redux veya mobx'te user altına;
                     // {name,

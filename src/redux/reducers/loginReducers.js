@@ -8,6 +8,7 @@ const INITIAL_STATE = {
     information:false,
     day:null,
     time:null,
+    favorites:{},
   product:""
    
 

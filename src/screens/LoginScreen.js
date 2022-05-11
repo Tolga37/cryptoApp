@@ -157,7 +157,7 @@ export default function LoginScreen({ navigation }) {
         if (result) {
             await AsyncStorage.setItem('number', number)
             const user = (await firestore().collection('users').doc(number).get()).data();
-             dispatch(login({isLogin:true,name:user.name,uid:user.uid,number:user.number}))
+             dispatch(login({isLogin:true,name:user.name,uid:user.uid,number:user.number, favorites: user.favorites}))
             Alert.alert("HOŞGELDİNİZ",user.name)
             navigation.navigate('Piyasa', {screen:"HomeScreen"})
  
