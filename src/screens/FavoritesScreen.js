@@ -16,12 +16,13 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        alignItems:"center",
+        justifyContent:"center"
     },
     title: {
         fontSize: 20,
         margin: 10,
         fontWeight: 'bold',
-        color: '#e63946'
     }
 
 });
