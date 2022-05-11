@@ -7,19 +7,23 @@ import axios from 'axios';
 
 export default function HomeScreen({ navigation }) {
     FontAwesome.loadFont();
-const [data,setData] = useState({})
+const [data,setData] = useState()
     const config = {
         headers: {
             apikey: "ZoSa5lGLkMJmgvFOSbRQ85TQ8p6yk4Rh"
         }
     }
-const url = "https://api.apilayer.com/exchangerates_data/latest?symbols=TRY,EUR&base=USD"
+const url = "https://api.apilayer.com/exchangerates_data/latest?symbols=TRY,EUR,BTC&base=USD"
 const getData = async () => {
    await axios.get(url, config)
         .then(async(res) => {
            await setData(res.data)
             console.log("Gelen", JSON.stringify(res, null, 4))
-            console.log("DATAA",data)
+           const moneyValue =Object.values(res.data.rates)
+           const moneyKeys =Object.keys(res.data.rates)
+            console.log("Money",moneyValue)
+            console.log("Money",moneyKeys)
+           return moneyKeys,moneyValue
         }
           
         )
