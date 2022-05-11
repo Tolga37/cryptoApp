@@ -16,9 +16,10 @@ export default function HomeScreen({ navigation }) {
             apikey: "ZoSa5lGLkMJmgvFOSbRQ85TQ8p6yk4Rh"
         }
     }
+ 
     const url = "https://api.apilayer.com/exchangerates_data/latest?symbols=TRY,EUR,BTC,AMD&base=USD"
     const getData = async () => {
-        await axios.get(url, config)
+            await axios.get(url, config)
             .then(async (res) => {
                 await setData(res.data)
                 console.log("Gelen", JSON.stringify(res, null, 4))
@@ -56,7 +57,7 @@ export default function HomeScreen({ navigation }) {
         const renderItem = ({item,index}) => (
             <View style={styles.moneyView} >
                 <Text style={styles.itemStyle}>{item[0]}         {item[1]} </Text>
-            <FontAwesome name="heart-o" size={25} onPress={()=> Alert.alert("Favoriye alındı")} />
+            <FontAwesome name="heart-o" size={25} color="red" onPress={()=> Alert.alert("Favoriye alındı")} />
             </View>
         )
 
